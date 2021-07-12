@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/Container"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#fefefe">
+
+    <AbsoluteLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/ball"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_x="130dp"
+        android:layout_y="130dp"
+        android:src="@drawable/ball"></ImageView>
+
+     <Button
+            android:id="@+id/paddle2"
+            android:layout_width="100dp"
+            android:layout_height="15dp"
+            android:layout_x="300dp"
+            android:layout_y="20dp"
+            android:background="#dd44bb"
+            android:enabled="false"></Button>
+
+    <Button
+        android:id="@+id/paddle1"
+        android:layout_width="100dp"
+        android:layout_height="15dp"
+        android:layout_x="340dp"
+        android:layout_y="380dp"
+        android:background="#8899dd"
+        android:enabled="false"></Button>
+
+    <ImageView
+        android:id="@+id/left"
+        android:layout_width="230dp"
+        android:layout_height="70dp"
+        android:layout_x="0dp"
+        android:layout_y="406dp"
+        android:src="@drawable/leftbtn"/>
+
+    <ImageView
+        android:id="@+id/right"
+        android:layout_width="230dp"
+        android:layout_height="70dp"
+        android:layout_x="222dp"
+        android:layout_y="406dp"
+        android:src="@drawable/rightbtn"/>
+
+    <Button
+        android:id="@+id/play"
+        android:layout_width="400dp"
+        android:layout_height="100dp"
+        android:layout_x="0dp"
+        android:layout_y="506dp"
+        android:background="#3355ba"
+        android:textColor="#ffffff"
+        android:fontFamily="monospace"
+        android:textStyle="bold"
+        android:text="PLAY START !"/>
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:textSize="40dp"
+        android:layout_x="100dp"
+        android:layout_y="640dp"
+        android:text="You : 0 Phone : 0"/>
+
+     <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_x="0dp"
+            android:layout_y="400dp"
+            android:background="#c0c0c0"/>
+
+    </AbsoluteLayout>
+
+</LinearLayout>
